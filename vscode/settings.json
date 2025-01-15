@@ -1,7 +1,14 @@
 {
+    //vscode apperance
     "workbench.colorTheme": "Tokyo Night",
-    // relative line number
+    "workbench.activityBar.location": "top",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
+    "editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.fontLigatures": true,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
@@ -19,7 +26,6 @@
         "*.s3db": "${capture}.${extname}-*"
     },
     "git.autofetch": true,
-    "editor.minimap.enabled": false,
     // templ
     "editor.formatOnSave": true,
     "[templ]": {
@@ -56,10 +62,7 @@
         }
     },
     "terminal.integrated.defaultProfile.linux": "bash",
-    "editor.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontFamily": "monospace",
-    "editor.fontLigatures": true,
-    // vim keybindings
+    // vim settings
     "vim.leader": "<Space>",
     "vim.insertModeKeyBindings": [
         {
@@ -73,6 +76,15 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "leader",
+                "c"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
         // Saving
         {
             "before": [
