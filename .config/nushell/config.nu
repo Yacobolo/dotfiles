@@ -13,3 +13,4 @@ def --env y [...args] {
 	}
 	rm -fp $tmp
 }
+alias lg = lazygit
